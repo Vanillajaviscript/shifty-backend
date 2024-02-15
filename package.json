@@ -11,5 +11,22 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.3"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "shifty-backend",
+  "version": "1.0.0",
+  "description": "Shifty backend",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vanillajaviscript/shifty-backend.git"
+  },
+  "author": "Javier Delgado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vanillajaviscript/shifty-backend/issues"
+  },
+  "homepage": "https://github.com/Vanillajaviscript/shifty-backend#readme"
 }
