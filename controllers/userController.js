@@ -5,7 +5,7 @@ import UserModal from "../models/userSchema.js";
 
 const secret = process.env.SECRET;
 
-const signin = async (req, res) => {
+export const signin = async (req, res) => {
   const {username, password} = req.body;
   try {
     const oldUser = await UserModal.findOne({username});
@@ -22,7 +22,7 @@ const signin = async (req, res) => {
   }
 };
 
-const signup = async (req, res) => {
+export const signup = async (req, res) => {
   const {username, password, firstName, lastName } = req.body;
   try {
     const oldUser = await UserModal.findOne({username});
@@ -42,8 +42,3 @@ const signup = async (req, res) => {
     console.log(error)
   }
 };
-
-export default {
-  signin,
-  signup
-}
