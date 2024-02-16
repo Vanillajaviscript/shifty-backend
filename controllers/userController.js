@@ -23,19 +23,19 @@ const signin = async (req, res) => {
 };
 
 const signup = async (req, res) => {
-  const {username, email, password, firstName, lastName } = req.body;
+  const {username, password, firstName, lastName } = req.body;
   try {
-    const oldUser = await UserModal.findOne({email});
+    const oldUser = await UserModal.findOne({username});
     if(oldUser) return res.status(400).json({message: "User already exists"});
     const hashedPassword = await bcrypt.hash(password, 12);
 
     const result = await UserModal.create({
-      email,
+      username,
       password: hashedPassword,
       name: `${firstName} ${lastName}`,
     });
 
-    const token = jwt.sign({email: result.email, id: result._id}, secret, {expiresIn: "4000h"});
+    const token = jwt.sign({username: result.username, id: result._id}, secret, {expiresIn: "4000h"});
     res.status(201).json({result, token});
   } catch(error) {
     res.status(500).json({message: "Bad Request!"});
