@@ -1,16 +1,17 @@
-import "dotenv/config";
+import 'dotenv/config';
 import express from "express";
 import dotenv from "dotenv";
 import colors from "colors";
-import connectDB from "connections.js";
-import serverMiddleware from "./middleware/server.js";
+import connectDB from "./config/connections.js";
 const PORT = process.env.PORT || 3001;
 const app = express();
+import serverMiddleware from './middleware/server.js';
 dotenv.config();
-/////////
+
+////////////
 //Middleware
-/////////
-const middleware = async = () => {
+////////////
+const middleware = async () => {
   try {
     serverMiddleware();
   } catch(error) {
@@ -18,6 +19,7 @@ const middleware = async = () => {
   }
 };
 middleware();
+
 //Root Directory
 app.get("/", (req, res) => {
   res.send("Shifty root directory")
