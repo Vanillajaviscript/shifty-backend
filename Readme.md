@@ -3,11 +3,11 @@
 **Summary**
 | Field | Detail |
 |-------|--------|
-| Project Name | {Shifty}|
-| Description | {An application to make shift coverage between nurses much more efficient} |
-| Developers | {Javier Delgado, Kyle Canamar} |
-| Live Website | {TBD} |
-| Repo | {https://github.com/Vanillajaviscript/shifty-backend} |
+| Project Name | Shifty|
+| Description | An application to make shift coverage between nurses much more efficient. |
+| Developers | Javier Delgado, Kyle Canamar |
+| Live Website | TBD |
+| Repo | https://github.com/Vanillajaviscript/shifty-backend |
 
 ## Problem Being Solved and Target Market
 
@@ -20,10 +20,12 @@ List of stories users should experience when using your application.
 - Users should be able to see the site on desktop and mobile
 - Users can create an account
 - Users can sign in to their account
-- Users can create a new item
+- Users can create a new post
 - Users can see all their items on the dashboard
-- Users can update items
-- User can delete items
+- Users can update posts
+- User can delete posts
+- User can comment on posts
+- User can see main schedule
 
 ## Route Tables
 
@@ -44,7 +46,6 @@ You should also include any additional notes on any special headers that may be 
 | /item/:id | DELETE | delete the item with the matching id | |
 | /auth/signup | POST | creates new user account returns user JSON | new user info must be included in body |
 | /auth/login | POST | logs in user and returns user JSON with JWT token | username and password must be included in body |
-
 ## Component Architecture
 
 You can use the [Mermaid Markdown Syntax](https://mermaid-js.github.io/mermaid/#/flowchart) to create a chart of how the parts of your frontend website relate to each other. Units should represent components of your page. The following is an example you may see in a Single Page Application like a React App.
