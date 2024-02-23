@@ -3,15 +3,15 @@
 **Summary**
 | Field | Detail |
 |-------|--------|
-| Project Name | {Put Project Name Here}|
-| Description | {One sentence summarizing what is the app and why it matters} |
-| Developers | {List of Developers} |
-| Live Website | {website of deployed application} |
-| Repo | {Link to git repository} |
+| Project Name | {Shifty}|
+| Description | {An application to make shift coverage between nurses much more efficient} |
+| Developers | {Javier Delgado, Kyle Canamar} |
+| Live Website | {TBD} |
+| Repo | {https://github.com/Vanillajaviscript/shifty-backend} |
 
 ## Problem Being Solved and Target Market
 
-Use this area to explain what problem your app is solving, and who are the people who have this problem.
+This application serves to replace the inefficent method of using the Facebook group modality to converse between nurses to trade shifts and make announcements. This application will tailored for healthcare professionals, namely NICU RNs. 
 
 ## User Stories
 
