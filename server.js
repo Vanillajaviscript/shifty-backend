@@ -2,7 +2,7 @@ import 'dotenv/config';
 import express from "express";
 import dotenv from "dotenv";
 import colors from "colors";
-import connectDB from "./config/connections.
+import connectDB from "./config/connections.js";
 const PORT = process.env.PORT || 3001;
 const app = express();
 import serverMiddleware from './middleware/server.js';
